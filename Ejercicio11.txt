@@ -1,0 +1,40 @@
+Proceso Multitask
+	impares <- 0
+	pares <- 0
+	totalPar <- 0
+	docena <- 0
+	mayor <- 0
+	Para i=0; hasta 10; i++
+		Leer N
+		Si (N > mayor) Entonces 
+			mayor = N
+		Fin Si
+		Si ((N % 2) == 0) & (N != 0) Entonces
+			pares++
+			totalPar = totalPar + N
+		Sino 
+			impares++
+		Fin Si
+		Si (N > 12) & (N <= 24) Entonces
+			docena++
+		Fin Si
+	Fin Para
+	promedio = totalPar / pares
+	Escribir "Hay ",impares," numeros impares, el promedio de los pares encontrades es ",promedio," el número más grande es ",mayor." y hay ",docena," números de la segunda docena"
+	Fin Proceso
+
+e)
+	Hacer 
+		Leer N
+		Si (N > mayor) Entonces 
+			mayor = N
+		Fin Si
+		Si ((N % 2) == 0) & (N != 0) Entonces
+			pares++
+			totalPar = totalPar + N
+		Sino 
+			impares++
+		Fin Si
+		Si (N > 12) & (N <= 24) Entonces
+			doce
+	Mientras (N != 36) 
